@@ -9,7 +9,7 @@ const passwordFlags = (password) => {
     if (!/[0-9]/.test(password))
         flags.push('no-numbers')
 
-    if(!/^[A-z0-9]/)
+    if (!/^[A-z0-9]/)
         flags.push('no-specials')
 
     return flags

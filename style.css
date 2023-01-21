@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("./assets/locks-transparent.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
