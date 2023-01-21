@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>
+        Password Generator
+    </title>
+    <script src="improve.js"></script>
+    <script src="page.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            Passw0rd Generator
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <input type="text" onclick="generatePassword()" class="password-input"
+                placeholder="Please enter your password...">
+        </div>
+        <div class="error-generators">
+            <label id="flag-too-short">Passwords should be at least 10 characters long.</label>
+            <label id="flag-no-capitals">Passwords should contain both uppercase and lowercase letters.</label>
+            <label id="flag-no-specials">Passwords should have at least one special character.</label>
+            <label id="flag-no-numbers">Passwords should have numbers</label>
+            <label id="flag-dictionary">Passwords should not contain plain english words</label>
+        </div>
+        <!-- <button type="button">Submit</button> -->
+        <div>
+            <div class="flex">
+                <div>
+                    <div>
+                        <button>Uppercase</button>
+                    </div>
+                    <div>
+                        <button>Lowercase</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button>Numbers</button>
+                    </div>
+                    <div>
+                        <button>Symbols</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button onclick="showLabels()" class="btn-generate">Generate</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
