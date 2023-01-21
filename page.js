@@ -5,10 +5,10 @@ const flagsList = ["too-short", "no-numbers", "dictionary-word"]
 const activeFlags = ["flags"]
 
 const setFlagsVisibility = (flags) => {
-    for(const possible of flagsList) {
+    for (const possible of flagsList) {
         // maybe cache this?
         const element = document.getElementsByClassName(possible)[0]
-        if(activeFlags.includes(flags)) {
+        if (activeFlags.includes(flags)) {
             element.classList.remove('active')
         }
     }
@@ -16,7 +16,7 @@ const setFlagsVisibility = (flags) => {
 
 const inputElement = document.querySelector('.password-input')
 
-inputElement.addEventListener('keydown', (event) => {
+inputElement.addEventListener('keyup', (event) => {
     const flags = passwordFlags(event.target.value)
     console.log(flags)
 })
